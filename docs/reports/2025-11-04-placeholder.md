@@ -1,5 +1,6 @@
 ---
 title: Placeholder
+authors: jordyslagter
 ---
 
 Hi this is a placeholder report!
