@@ -1,0 +1,32 @@
+.landing {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  background-color: var(--ifm-color-primary-light);
+}
+
+.title {
+  font-size: 8rem;
+}
+
+.tagline {
+  font-size: 4rem;
+}
+
+.buttonwrap {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: black;
+}
