@@ -1,0 +1,4 @@
+acceptance-testing:
+  label: Acceptance Testing
+  permalink: /acceptance-testing
+  description: Reports acceptance tests

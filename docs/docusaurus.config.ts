@@ -113,11 +113,11 @@ const config: Config = {
             },
             {
               label: "Design documentation",
-              to: "/docs/design",
+              to: "/docs/category/design-documentation",
             },
             {
               label: "System documentation",
-              to: "/docs/system",
+              to: "/docs/category/system-documentation",
             },
           ],
         },
