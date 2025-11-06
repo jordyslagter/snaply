@@ -41,7 +41,7 @@ jobs:
 
       - name: Generate API reference
         working-directory: snaply
-        run: dart doc --output ../docs/static/api
+        run: dart doc --output ../docs/static/snaply-api
 
       - name: Setup Node.js and Yarn
         uses: actions/setup-node@v4
