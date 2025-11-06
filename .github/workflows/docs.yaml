@@ -26,24 +26,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # TODO: implement flutter api reference generation when app gets scaffolded
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.35.7"
 
-      # - name: Setup Flutter
-      #   uses: subosito/flutter-action@v2
-      #   with:
-      #     flutter-version: "3.35.7"
-      #
-      # - name: Disable Flutter telemetry
-      #   working-directory: app
-      #   run: flutter --disable-analytics
-      #
-      # - name: Get dependencies
-      #   working-directory: app
-      #   run: flutter pub get
-      #
-      # - name: Generate API reference
-      #   working-directory: app
-      #   run: dart doc --output ../docs/static/api
+      - name: Disable Flutter telemetry
+        working-directory: app
+        run: flutter --disable-analytics
+
+      - name: Get dependencies
+        working-directory: snaply
+        run: flutter pub get
+
+      - name: Generate API reference
+        working-directory: snaply
+        run: dart doc --output ../docs/static/api
 
       - name: Setup Node.js and Yarn
         uses: actions/setup-node@v4
