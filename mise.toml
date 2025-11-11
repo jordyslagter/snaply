@@ -1,0 +1,6 @@
+experimental_monorepo_root = true
+
+[tools]
+flutter = "3.35.7-stable"
+node = "25.1.0"
+yarn = "4.10.3"
